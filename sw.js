@@ -2,8 +2,7 @@ const cacheName = 'ped-med-v0'
 const appShellFiles = [
   '/index.html',
   '/app.js',
-  '/sw.js',
-  'config.js',
+  '/config.js',
   '/assets/images/icon-192.png',
   '/assets/images/icon-512.png'
 ]
