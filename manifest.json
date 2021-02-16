@@ -1,5 +1,6 @@
 {
   "name": "PedMed",
+  "short_name": "PedMed",
   "start_url": ".",
   "icons": [{
     "src": "assets/images/icon-192.png",
