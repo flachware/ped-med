@@ -40,7 +40,11 @@ class PedMed extends HTMLElement {
     this.shadow = this.attachShadow({mode: 'open'})
       .innerHTML = `
       <p>
-        <input class="input" type="number" pattern="[0-9]*" placeholder="Gewicht">
+        <input
+          class="input"
+          type="number"
+          inputmode="decimal"
+          placeholder="Gewicht">
       </p>
       <p>
       <select class="med-selector">
@@ -67,7 +71,7 @@ class PedMed extends HTMLElement {
   }
   
   connectedCallback() {
-    this.input.addEventListener('change', e => {
+    this.input.addEventListener('input', e => {
       this.calc()
     })
     
