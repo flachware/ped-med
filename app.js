@@ -1,5 +1,9 @@
 import data from './config.js'
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+
 class PedMed extends HTMLElement {
   static get observedAttributes() {
     return ['med', 'schema', 'result']
